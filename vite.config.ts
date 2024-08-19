@@ -3,7 +3,8 @@ import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 
 import { presetUno, presetAttributify, presetIcons } from 'unocss';
-import Unocss from 'unocss/vite';
+// import Unocss from 'unocss/vite';
+import Unocss from './config/unocss';
 
 const rollupOptions = {
   external: ['vue', 'vue-router'],
@@ -18,9 +19,10 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
-    Unocss({
-      presets: [presetUno(), presetAttributify(), presetIcons()],
-    }),
+    Unocss(),
+    // Unocss({
+    //   presets: [presetUno(), presetAttributify(), presetIcons()],
+    // }),
   ],
   build: {
     rollupOptions,
@@ -30,6 +32,7 @@ export default defineConfig({
       entry: './src/entry.ts',
       name: 'SmartyUI',
       fileName: 'smarty-ui',
+      // formats: ['esm', 'umd', 'iife'],
       formats: ['es', 'umd', 'iife', 'cjs'],
     },
   },
