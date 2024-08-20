@@ -97,7 +97,7 @@
   "include": [
     "./**/*.*",
     "./shims-vue.d.ts"
-  ],
+, "docs/vitepress"  ],
   "exclude": [
     "node_modules"
   ],
