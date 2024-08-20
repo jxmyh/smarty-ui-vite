@@ -12,6 +12,8 @@ const rollupOptions = {
     globals: {
       vue: 'Vue',
     },
+    // 实现icon图标
+    assetFileNames: 'smarty-ui.[ext]', // 资源文件像 字体，图片等
   },
 };
 
@@ -32,6 +34,7 @@ export default defineConfig({
       entry: './src/entry.ts',
       name: 'SmartyUI',
       fileName: 'smarty-ui',
+
       // formats: ['esm', 'umd', 'iife'],
       formats: ['es', 'umd', 'iife', 'cjs'],
     },
