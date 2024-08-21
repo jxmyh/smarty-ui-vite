@@ -1,7 +1,7 @@
 import { createApp } from 'vue/dist/vue.esm-browser.js';
 import SmartyUI from './entry';
 // import SButton from './button';
-// 去除红色提示
+// 去除红色提示2323
 // 在src 目录下创建 shims-vue.d.ts 文件 并且写入内容
 // import SFCButton from './SFCButton.vue';
 // import JSXButton from './JSXButton';
